@@ -1,0 +1,25 @@
+#main-nav {
+  padding: 4px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  #nav-title {
+    font-size: 18px;
+    font-weight: 700px;
+    color: #5e5493;
+  }
+
+  #main-links {
+    li {
+      list-style-type: none;
+      display: inline;
+      padding: 0 8px;
+      color: #5e5493;
+      font-size: 14px;
+    }
+  }
+}
