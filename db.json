@@ -1,0 +1,34 @@
+{
+   "items":[
+      {
+         "id":1,
+         "name":"Item 1",
+         "dateCreated":"",
+         "createdBy":"",
+         "dateModified":"",
+         "modifiedBy":"",
+         "settings":{
+            "enabled":true,
+            "setting1":"setting 1",
+            "setting2":"setting 2",
+            "setting3":"setting 3",
+            "setting4":"setting 4"
+         }
+      },
+      {
+         "id":2,
+         "name":"Item 1",
+         "dateCreated":"",
+         "createdBy":"",
+         "dateModified":"",
+         "modifiedBy":"",
+         "settings":{
+            "enabled":true,
+            "setting1":"setting 1",
+            "setting2":"setting 2",
+            "setting3":"setting 3",
+            "setting4":"setting 4"
+         }
+      }
+   ]
+}
