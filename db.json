@@ -3,10 +3,10 @@
       {
          "id":1,
          "name":"Item 1",
-         "dateCreated":"",
-         "createdBy":"",
-         "dateModified":"",
-         "modifiedBy":"",
+         "dateCreated":"2020-08-10T17:28:48.2266612Z",
+         "createdBy":"user@example.com",
+         "dateModified":"2020-08-10T17:28:48.2266612Z",
+         "modifiedBy":"user@example.com",
          "settings":{
             "enabled":true,
             "setting1":"setting 1",
@@ -18,10 +18,10 @@
       {
          "id":2,
          "name":"Item 2",
-         "dateCreated":"",
-         "createdBy":"",
-         "dateModified":"",
-         "modifiedBy":"",
+         "dateCreated":"2020-08-10T17:28:48.2266612Z",
+         "createdBy":"user@example.com",
+         "dateModified":"2020-08-10T17:28:48.2266612Z",
+         "modifiedBy":"user@example.com",
          "settings":{
             "enabled":true,
             "setting1":"setting 1",
