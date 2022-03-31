@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { Item } from 'src/app/models/item.model';
+import { ItemService } from '../../services/item.service';
 
 @Component({
   selector: 'app-details',
@@ -10,17 +12,11 @@ import { Subscription } from 'rxjs';
 export class DetailsComponent implements OnInit, OnDestroy {
   sub: Subscription;
   itemId: number;
+  selectedItem: Item;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private itemStore: ItemService) {}
 
-  ngOnInit(): void {
-    this.sub = this.route.paramMap.subscribe((params) => {
-      if (params.get('itemId')) {
-        this.itemId = +params.get('itemId');
-        console.log(this.itemId);
-      }
-    });
-  }
+  ngOnInit(): void {}
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();

@@ -37,7 +37,14 @@ export class ItemService extends ObservableStore<StoreState> {
     this.api.getItems().subscribe((response: any) => {
       const st = this.getState();
       st.items = response;
+      st.selectedItem = st.items[0];
       this.setState(st, StoreActions.ITEM_UPDATED);
     });
+  }
+
+  getItemDetails(id: number) {
+    const st = this.getState();
+    st.selectedItem = st.items.find((item) => item.id === id);
+    this.setState(st, StoreActions.ITEM_UPDATED);
   }
 }

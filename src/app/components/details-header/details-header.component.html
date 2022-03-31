@@ -1,7 +1,40 @@
-<header id="details-header">
-  <div></div>
+<div id="details-header-container">
+  <div id="wrapper">
+    <header id="details-header">
+      <div id="top-actions">
+        <span>Item Details</span>
+        <div class="action-btns">
+          <mat-icon class="icon">edit</mat-icon>
+          <mat-icon class="icon">delete</mat-icon>
+        </div>
+      </div>
+      <div id="header-details">
+        <h1 class="header-title">{{item.name}}</h1>
+        <p> Created {{item.dateCreated | date}} by {{item.createdBy}}</p>
+        <p> Created {{item.dateCreated | date }} by {{item.createdBy}}</p>
+      </div>
+    </header>
+    <mat-tab-group>
+      <mat-tab label="First"></mat-tab>
+      <mat-tab label="Second"></mat-tab>
+      <mat-tab label="Third"></mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
+<!-- <header id="details-header" *ngIf="this.selectedItem">
+  <div>
+    <h1>{{selectedItem.name}}</h1>
+      <p> Created {{selectedItem.dateCreated | date}} by {{selectedItem.createdBy}}</p>
+      <p> Created {{selectedItem.dateCreated | date }} by {{selectedItem.createdBy}}</p>
+  </div>
   <div class="action-btns">
     <mat-icon class="icon">edit</mat-icon>
     <mat-icon class="icon">delete</mat-icon>
   </div>
 </header>
+<mat-tab-group>
+  <mat-tab label="First"></mat-tab>
+  <mat-tab label="Second"></mat-tab>
+  <mat-tab label="Third"></mat-tab>
+</mat-tab-group> -->
