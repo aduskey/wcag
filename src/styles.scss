@@ -1,8 +1,48 @@
+html,
 body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
+  color: #212121;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Core Styles */
+
+.action-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #757575;
+}
+
+.active-link {
+  background-color: #f9f9f9;
+}
+
+/* Material Overrides */
+
+mat-form-field {
+  width: 100%;
+}
+
+#subnav-main {
+  mat-nav-list.mat-list-base {
+    padding-top: 0;
+  }
+
+  .mat-form-field {
+    .mat-form-field-wrapper {
+      padding-bottom: 0;
+    }
+    .mat-form-field-underline {
+      bottom: 0;
+    }
+  }
+}

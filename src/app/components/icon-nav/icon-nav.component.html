@@ -1,19 +1,12 @@
 <nav id="icon-nav">
   <ul>
-    <li>
-      <a><mat-icon>search</mat-icon></a>
-    </li>
-    <li>
-      <a><mat-icon>search</mat-icon></a>
-    </li>
-    <li>
-      <a><mat-icon>search</mat-icon></a>
-    </li>
-    <li>
-      <a><mat-icon>search</mat-icon></a>
-    </li>
-    <li>
-      <a><mat-icon>search</mat-icon></a>
-    </li>
+    <a>
+      <li
+      *ngFor="let icon of icons"
+      [routerLink]="icon.routerLink"
+      [routerLinkActive]="['active-link']">
+        <mat-icon class="icon" > {{ icon.icon }} </mat-icon>
+      </li>
+    </a>
   </ul>
 </nav>

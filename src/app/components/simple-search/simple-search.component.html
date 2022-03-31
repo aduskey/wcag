@@ -1,0 +1,90 @@
+  <mat-form-field class="search-input" appearance="fill" floatLabel="never">
+    <mat-label>Search</mat-label>
+    <mat-icon matPrefix>search</mat-icon>
+    <input matInput>
+    <mat-icon matSuffix>clear</mat-icon>
+  </mat-form-field>
+
+
+<!-- <div class="container flex-layout-vertical">
+  <div
+    class="flex-layout-flex flex-layout-horizontal flex-layout-center offset"
+  >
+    <span class="flex-layout-flex title">{{ title }}</span>
+    <button
+      mat-icon-button
+      class="icon"
+      [matMenuTriggerFor]="sortMenu"
+      *ngIf="showSort"
+      attr.aria-label=""
+    >
+      <mat-icon>sort</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="icon"
+      (click)="onAddNew()"
+      *ngIf="showAddNew"
+      attr.aria-label=""
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="icon"
+      [matMenuTriggerFor]="menu"
+      *ngIf="showOverflow"
+      attr.aria-label=""
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </div>
+  <div
+    class="flex-layout-flex flex-layout-horizontal flex-layout-center offset"
+  >
+    <mat-icon class="search-icon">search</mat-icon>
+    <input
+      #searchInput
+      matInput
+      data-testid="search"
+      autofocus
+      class="search-form-field flex-layout-flex"
+      placeholder="{{ searchPlaceholder }}"
+      autocomplete="off"
+      attr.aria-label=""
+    />
+    <div [hidden]="!isSearching" class="cancel-icon">
+      <button
+        attr.aria-label=""
+        data-testid="clear-search"
+        mat-icon-button
+        class="icon"
+        (click)="clear()"
+        #clearButton
+      >
+        <mat-icon>clear</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+<mat-menu #menu="matMenu">
+  <button
+    mat-menu-item
+    *ngFor="let option of overflowOptions"
+    (click)="onOverflowSelect(option)"
+    attr.aria-label=""
+  >
+  </button>
+</mat-menu>
+
+<mat-menu #sortMenu="matMenu">
+  <button
+    mat-menu-item
+    *ngFor="let option of sortOptions"
+    (click)="onSortSelect(option)"
+    [ngClass]="{ selected: option.isSelected }"
+  >
+    {{ option.title}}
+  </button>
+</mat-menu>
+ -->

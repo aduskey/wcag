@@ -1,4 +1,32 @@
-main {
-  display: flex;
-  flex-direction: row;
+.grid-container {
+  overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 56px 275px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "icon-nav list-area content-area";
+}
+
+.icon-nav {
+  grid-area: icon-nav;
+  background-color: #fff;
+  max-width: 56px;
+}
+
+.content-area {
+  grid-area: content-area;
+  background-color: var(--q-body-bg-color);
+  overflow-y: scroll;
+}
+
+mat-tab-group {
+  height: 100%;
+
+  mat-tab-body {
+    height: 100%;
+
+    .mat-tab-body-content {
+      overflow-y: scroll;
+    }
+  }
 }

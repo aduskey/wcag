@@ -13,13 +13,10 @@
     color: #5e5493;
   }
 
-  #main-links {
-    li {
-      list-style-type: none;
-      display: inline;
-      padding: 0 8px;
-      color: #5e5493;
-      font-size: 14px;
-    }
+  a.profile-ball {
+    background-color: #5e5493;
+    clip-path: circle(40%);
+    padding: 1em;
+    color: #fff;
   }
 }

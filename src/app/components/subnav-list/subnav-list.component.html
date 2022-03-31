@@ -1,18 +1,55 @@
-<div id="subnav">
+<div id="subnav-main">
   <header id="subnav-header">
-      <div>
-        <span>All List Items</span>
-        <div>
-          <mat-icon>sort</mat-icon>
-          <mat-icon>add</mat-icon>
-        </div>
-      </div>
-    <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>Clearable input</mat-label>
-      <input matInput type="text" >
-      <button matSuffix mat-icon-button aria-label="Clear">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
+    <h1 class="subnav-title">All List Items</h1>
+    <div class="action-btns">
+      <mat-icon class="icon">sort</mat-icon>
+      <mat-icon class="icon">add</mat-icon>
+    </div>
   </header>
+  <simple-search></simple-search>
+  <mat-nav-list id="subnav-list-main">
+    <mat-list-item
+      class="list-item"
+      *ngFor="let item of items"
+      [routerLink]="item.id"
+      [routerLinkActive]="['active-link']"
+      >
+      <div class="item-header" matLine>
+        <h3>{{item.name}}</h3>
+        <mat-icon class="icon">star</mat-icon>
+      </div>
+      <p matLine> Created {{item.dateCreated | date}} by {{item.createdBy}}</p>
+      <p matLine> Created {{item.dateCreated | date }} by {{item.createdBy}}</p>
+    </mat-list-item>
+  </mat-nav-list>
 </div>
+
+
+<!-- <div
+    class="flex-layout-flex flex-layout-horizontal flex-layout-center offset"
+  >
+    <mat-icon class="search-icon">search</mat-icon>
+    <input
+      #searchInput
+      matInput
+      data-testid="search"
+      autofocus
+      class="search-form-field flex-layout-flex"
+      placeholder="{{ searchPlaceholder }}"
+      autocomplete="off"
+      attr.aria-label="{{ 'aria.searchAriaLbl' | transloco }}"
+    />
+    <div [hidden]="!isSearching" class="cancel-icon">
+      <button
+        attr.aria-label="{{ 'aria.clearSearchAriaLbl' | transloco }}"
+        data-testid="clear-search"
+        mat-icon-button
+        class="icon"
+        (click)="clear()"
+        #clearButton
+      >
+        <mat-icon>clear</mat-icon>
+      </button>
+    </div>
+  </div>
+</div> -->
