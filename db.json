@@ -1,0 +1,34 @@
+{
+   "items":[
+      {
+         "id":1,
+         "name":"Item 1",
+         "dateCreated":"2020-08-10T17:28:48.2266612Z",
+         "createdBy":"user@example.com",
+         "dateModified":"2020-08-10T17:28:48.2266612Z",
+         "modifiedBy":"user@example.com",
+         "settings":{
+            "enabled":true,
+            "setting1":"setting 1",
+            "setting2":"setting 2",
+            "setting3":"setting 3",
+            "setting4":"setting 4"
+         }
+      },
+      {
+         "id":2,
+         "name":"Item 2",
+         "dateCreated":"2020-08-10T17:28:48.2266612Z",
+         "createdBy":"user@example.com",
+         "dateModified":"2020-08-10T17:28:48.2266612Z",
+         "modifiedBy":"user@example.com",
+         "settings":{
+            "enabled":true,
+            "setting1":"setting 1",
+            "setting2":"setting 2",
+            "setting3":"setting 3",
+            "setting4":"setting 4"
+         }
+      }
+   ]
+}
